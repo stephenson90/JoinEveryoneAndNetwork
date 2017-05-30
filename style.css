@@ -1,0 +1,14 @@
+.jumbotron {
+	background-color: #cccccc;
+	/*float: left;*/
+}
+.display-3 {
+	text-align: center;
+}
+.img-thumbnail {
+	/*float: left;*/
+	/*clear: bottom;*/
+}
+.icons {
+	/*float: left;*/
+}
