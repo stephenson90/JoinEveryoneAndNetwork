@@ -1,0 +1,14 @@
+body{
+	background-image: url("../images/built.png");
+}
+
+.block{
+	display: block !important;
+
+}
+
+/*.moveleft{
+	position:relative;
+	    right: -500px;
+    top: 30px;
+}*/
