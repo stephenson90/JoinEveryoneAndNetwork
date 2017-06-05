@@ -1,4 +1,5 @@
 
+
 module.exports = function(sequelize, DataTypes) {
 
 var userlogin = sequelize.define("userlogin", {
@@ -12,3 +13,4 @@ var userlogin = sequelize.define("userlogin", {
 
 return userlogin;
 };
+

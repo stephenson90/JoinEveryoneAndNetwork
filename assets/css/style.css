@@ -1,4 +1,5 @@
 
+
 .gallery{
 
 	display: inline-block;  
@@ -27,13 +28,14 @@
 	 clear:both;
 	}
 
+
 .jumbotron {
 	background-color: #cccccc;
 	/*float: left;*/
 }
 .display-3 {
 	text-align: center;
-}
+
 
 .form-style-9{
     max-width: 80%;
@@ -105,3 +107,4 @@
     background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
     background-color: #28739E;
 }
+

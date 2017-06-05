@@ -1,4 +1,5 @@
 
+
 module.exports = function(sequelize, DataTypes) {
 
 var portfolio = sequelize.define("portfolio", {
@@ -11,3 +12,4 @@ var portfolio = sequelize.define("portfolio", {
 
 return portfolio;
 };
+

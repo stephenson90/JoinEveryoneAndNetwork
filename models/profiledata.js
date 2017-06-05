@@ -1,4 +1,5 @@
 
+
 module.exports = function(sequelize, DataTypes) {
 
 var profiledata = sequelize.define("profiledata", {	
@@ -12,3 +13,4 @@ var profiledata = sequelize.define("profiledata", {
 
 return profiledata;
 };
+
