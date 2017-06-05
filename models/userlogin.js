@@ -1,10 +1,16 @@
-var orm = require('../config/orm.js');
 
-var userlogin = {
-	all: function(cb){
-		orm.all('userlogin', function(res){
-			cb(res);
-		})
+
+module.exports = function(sequelize, DataTypes) {
+
+var userlogin = sequelize.define("userlogin", {
+	ID:{type:DataTypes.INTEGER, autoIncrement:true, primarykey:true},
+	username:DataTypes.STRING,
+	password:DataTypes.STRING,
+	name:DataTypes.STRING
+
 	}
-}
-module.exports = userlogin;
+});
+
+return userlogin;
+};
+

@@ -1,10 +1,16 @@
-var orm = require('../config/orm.js');
 
-var profiledata = {
-	all: function(cb){
-		orm.all('profiledata', function(res){
-			cb(res);
-		})
+
+module.exports = function(sequelize, DataTypes) {
+
+var profiledata = sequelize.define("profiledata", {	
+	data:DataTypes.TEXT
 	}
-}
-module.exports = profiledata;
+	profiledata.belongsTo(userlogin, {foreignKey: 'ID'});
+	profiledata.belongsTo(userlogin, {foreignKey: 'name'});
+	profiledata.belongsTo(pictures, {foreignKey: 'image'});
+});
+
+
+return profiledata;
+};
+

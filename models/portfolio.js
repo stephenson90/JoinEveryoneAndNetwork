@@ -1,10 +1,15 @@
-var orm = require('../config/orm.js');
 
-var portfolio = {
-	all: function(cb){
-		orm.all('portfolio', function(res){
-			cb(res);
-		})
+
+module.exports = function(sequelize, DataTypes) {
+
+var portfolio = sequelize.define("portfolio", {
+	title:DataTypes.STRING,
+	body:DataTypes.TEXT
+
 	}
-}
-module.exports = portfolio;
+	portfolio.belongsTo(userlogin, {foreignKey: 'ID'});
+});
+
+return portfolio;
+};
+
