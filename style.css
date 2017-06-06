@@ -1,5 +1,6 @@
 .jumbotron {
 	background-color: #cccccc;
+	margin-bottom: 0px;
 	/*float: left;*/
 }
 .display-3 {
@@ -11,4 +12,15 @@
 }
 .icons {
 	/*float: left;*/
+}
+
+.skills{
+	width:25%;
+}
+
+.page { width: 1000px;
+        min-height: 29.7cm;
+        margin: 0%;
+        background: white;
+        padding: 20px 50px;
 }
